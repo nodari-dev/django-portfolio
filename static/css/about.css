@@ -1,0 +1,361 @@
+header.header{
+  background-image: url("../img/jpg/about_bg.jpg");
+  background-size: inherit;
+  background-position: center;
+}
+.header-left{
+  background:none;
+  height: 100vh;
+}
+.header-left img{
+  position: absolute;
+  top:0;
+  bottom:0;
+  right:2%;
+  margin: auto;
+}
+p.mobile_text_about{
+  display: none;
+}
+.header-right{
+  background:none;
+}
+.header-right p{
+  font-size: 1.5vw;
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  margin: auto;
+  height:35vh;
+}
+p.mobile_text_about{
+  display: none;
+}
+.languages{
+  width:100%;
+  height:100vh;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  background-image: url("../img/jpg/car_mountaing.jpg");
+  background-size: inherit;
+  background-position: right;
+}
+h2.languages-heading{
+  font-weight: normal;
+  color:#EDE2CE;
+  background-color: #141517;
+  font-size: 3vw;
+  padding:10px;
+}
+.heading-block{
+  width:40%;
+  height: 100%;
+  line-height: 100vh;
+  vertical-align: middle;
+  position: absolute;
+  left:0;
+  background-color: black;
+  opacity: 0.7;
+}
+.heading-block h2{
+  font-weight: normal;
+  font-size: 3vw;
+}
+.lan-space{
+  width:60%;
+  height:100%;
+  box-sizing: border-box;
+  position: absolute;
+  right:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.lan-el{
+  width:50%;
+  text-align: center;
+  line-height: 50vh;
+  vertical-align: middle;
+  height:50%;
+  background-color: black;
+  box-sizing: border-box;
+  opacity: 0.7;
+  transition: 0.3s;
+  /*border:4px solid #141517;*/
+
+}
+.lan-el img{
+  width:30%;
+  vertical-align: middle;
+}
+.lan-el p{
+  font-size: 50px;
+  margin-top:10px;
+  color:#141517;
+  transition: 0.3s;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+.lan-el:hover{
+  transition: 0.3s;
+  opacity: 1;
+}
+.canada{
+  width:100%;
+  height:100vh;
+  line-height: 100vh;
+  text-align: center;
+  background-image:url("../img/jpg/canada.jpg");
+  background-size:100%;
+  background-position: center;
+}
+
+.canada h2{
+  font-size:6vw;
+  font-weight: normal;
+}
+
+.contact{
+  width:100%;
+  height:100vh;
+  background-color:#141517;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width:40%;
+  height:100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.container h2{
+  font-weight: normal;
+  font-size: 4vw;
+}
+.heading-question{
+  width:auto;
+  height:20vh;
+  box-sizing: border-box;
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  margin: auto;
+  text-align: right;
+}
+.heading-question.action{
+  text-align: left;
+  line-height: 20vh;
+  vertical-align: middle;
+}
+.container:nth-child(1) h2{
+  font-size: 3vw;
+}
+h2.symbol{
+  font-size: 25vw;
+}
+.container:nth-child(2){
+  vertical-align: middle;
+  text-align: center;
+  line-height: 100vh;
+}
+.container:nth-child(3){
+  vertical-align: middle;
+  text-align: left;
+
+}
+.container:nth-child(3) h2{
+  display: inline-block;
+}
+.container:nth-child(3) a{
+  font-size: 5vw;
+  margin-left: 10px;
+  color:#A4E2CD;
+}
+@media (min-width: 50px) and (max-width: 1024px) {
+  header.header{
+    height: auto;
+  }
+  .header-left{
+    width:100%;
+    height:100vh;
+    display: block;
+    text-align: center;
+  }
+  .header-left img{
+    width:300px;
+    top:65px;
+    position: relative;
+    text-align: center;
+  }
+  .down-link-header{
+    display: none;
+  }
+  p.mobile_text_about{
+    display: block;
+    position: relative;
+    top:70px;
+    text-align:center;
+    font-size: 15px;
+    background-color: #141517;
+    padding: 10px;
+    color:#D7D7D7;
+  }
+  .header-right{
+    display: none;
+  }
+  .languages{
+    height: 600px;
+
+  }
+  .lan-space{
+    width:100%;
+    height:500px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .heading-block{
+    width:100%;
+    height: 100px;
+    position: relative;
+    line-height: 100px;
+  }
+  .heading-block h2{
+    font-size: 40px;
+  }
+  .lan-el{
+    width:50%;
+    height:50%;
+    line-height:250px;
+    margin: 0;
+  }
+  .lan-el p{
+    font-size: 35px;
+  }
+  .lan-space img{
+    width:70px;
+    margin-top:65px;
+  }
+  .canada{
+    height: 700px;
+    line-height: inherit;
+    background-size: inherit;
+    background-position: top center;
+    box-sizing: border-box;
+  }
+  .canada h2{
+    font-size: 30px;
+    color:#141517;
+    position: relative;
+    top: 300px;
+  }
+  .contact{
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .container{
+    width:100%;
+    height: 150px;
+    line-height: 30px;
+  }
+  .container:nth-child(1) h2{
+    font-size: 30px;
+  }
+  .container:nth-child(1) h2:nth-child(1){
+    margin-top: 27px;
+  }
+  .container:nth-child(2){
+    line-height: 150px;
+  }
+  h2.symbol{
+    font-size:150px;
+  }
+  .heading-question{
+    text-align: center;
+  }
+
+  .heading-question.action{
+    text-align: center;
+  }
+  .container:nth-child(3) h2{
+    font-size: 30px;
+  }
+  .container:nth-child(3) a{
+    font-size: 40px;
+    margin-left: 10px;
+    color:#A4E2CD;
+  }
+}
+@media (width: 834px){
+  
+}
+@media (width: 1112px) {
+  header.header{
+    height: 100vh;
+  }
+ .header-left img{
+   float:left;
+   width:300px;
+   position: absolute;
+   top:0;
+   bottom:0;
+   right:5%;
+   margin: auto;
+ }
+ .header-right p{
+   position: absolute;
+   top:0;
+   left:0;
+   bottom: 0;
+   right:0;
+   margin: auto;
+   height: 40vh;
+   font-size: 25px;
+ }
+  p.mobile_text_about{
+    display: block;
+    position: relative;
+    top:100px;
+    text-align:left;
+    font-size: 20px;
+    padding: 10px;
+    color:#D7D7D7;
+    background:none;
+    display: none;
+  }
+  .languages{
+    height: 150vh;
+  }
+  .lan-space{
+    width:100%;
+    height:125vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .heading-block{
+    width:100%;
+    height: 25vh;
+    position: relative;
+    line-height: 25vh;
+  }
+  .heading-block h2{
+    font-size: 40px;
+  }
+  .canada{
+    height: 100vh;
+    line-height: 100vh;
+    vertical-align: center;
+    background-size: inherit;
+    background-position: center;
+    box-sizing: border-box;
+  }
+  .canada h2{
+    font-size: 40px;
+    color:#EDE2CE;
+    position: relative;
+    top: 0;
+  }
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact me</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="{% static 'css/main.css'%}">
+  <link rel="stylesheet" href="{% static 'css/wc.css'%}">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<div class="menu-mobile" id="menu-mobile">
+  <div class="menu-list-mobile">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/about/">About me</a></li>
+      <li><a href="/contact/">Contact me</a></li>
+      <li id="close_menu_el">Close</li>
+    </ul>
+  </div>
+</div>
+<header class="header">
+  <nav class="navigation desktop">
+    <div class="logo">
+      <a href="/"><core src="{% static 'core/png/clock_logo.png'%}" alt=""></a>
+    </div>
+    <div class="nav-menu">
+      <ul>
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/about/">About me</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navigation mobile">
+    <div class="logo">
+      <a href="/"><core src="{% static 'core/png/clock_logo.png'%}" alt=""></a>
+    </div>
+    <div class="open-menu" id="open-menu">
+      <p>Menu</p>
+    </div>
+  </nav>
+</header>
+<article class="contact">
+  <div class="article-left">
+<form method="post" class="contact_me">
+    <h2>Contact me</h2>
+    {% csrf_token %}
+    {{ form.name }}
+    {{ form.last_name }}
+    {{ form.email }}
+    {{ form.text }}
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
+  </div>
+  <div class="article-right"></div>
+</article>
+  <script src="{% static 'js/vendor/jquery-3.4.1.min.js'%}"></script>
+  <script src="{% static 'js/vendor/modernizr-3.7.1.min.js'%}"></script>
+  <script src="{% static 'js/plugins.js' %}"></script>
+  <script src="{% static 'js/main.js'%}"></script>
+
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>

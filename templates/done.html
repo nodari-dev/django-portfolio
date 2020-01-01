@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <link rel="stylesheet" href="{% static 'css/main.css'%}">
+      <link rel="stylesheet" href="{% static 'css/wc.css'%}">
+</head>
+<body>
+<div id="preloader">
+  <h2>Hold up</h2>
+</div>
+    <div class="done-block">
+        <h2 class="done">Thank you for sending message!</h2>
+        <a href="/" class="know-more">Home page</a>
+    </div>
+
+  <script src="{% static 'js/vendor/jquery-3.4.1.min.js'%}"></script>
+  <script src="{% static 'js/vendor/modernizr-3.7.1.min.js'%}"></script>
+  <script src="{% static 'js/plugins.js' %}"></script>
+  <script src="{% static 'js/main.js'%}"></script>
+</body>
+</html>

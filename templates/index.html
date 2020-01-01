@@ -1,0 +1,109 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Nodari Pylypyshak</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="{% static 'css/main.css'%}">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<div id="preloader">
+  <h2>Hold up</h2>
+</div>
+<div class="menu-mobile" id="menu-mobile">
+  <div class="menu-list-mobile">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/work/">Work</a></li>
+      <li><a href="/about/">About me</a></li>
+      <li><a href="/contact/">Contact me</a></li>
+      <li id="close_menu_el">Close</li>
+    </ul>
+  </div>
+</div>
+  <header class="header" id="header">
+    <nav class="navigation desktop">
+      <div class="logo">
+        <a href="/"><img src="{% static 'img/png/clock_logo.png'%}" alt=""></a>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="/work/">Work</a></li>
+          <li><a href="/about/">About me</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navigation mobile">
+      <div class="logo">
+        <a href="/"><img src="{% static 'img/png/clock_logo.png'%}" alt=""></a>
+      </div>
+      <div class="open-menu" id="open-menu">
+        <p>Menu</p>
+      </div>
+    </nav>
+    <div class="header-left">
+
+      <img src="{% static 'img/gif/dance.gif' %}" alt="" class="dance">
+      <img src="{% static 'img/png/tv.png' %}" alt="" class="vintage-image-header">
+    </div>
+    <div class="header-right">
+      <img src="{% static 'img/png/LOGO.png' %}" alt="" class="image-name-text">
+      <img src="{% static 'img/gif/never_give_you_up.gif' %}" alt="" class="dance mobile">
+    </div>
+    <a href="#article">
+      <div class="down-link-header"></div>
+    </a>
+  </header>
+  <article class="content" id="article">
+    <div class="about-me" id="about_me">
+      <div class="left">
+        <div class="forest-blur"></div>
+        <div class="text-about">
+          <h2>About me</h2>
+          <p>I always think about creating something new. Desing, programming, ideas, motivation, reading - all of these components are in me. So yeah, I'm hugry for work and successful results.</p>
+          <a href="/about/" class="know-more">More</a>
+        </div>
+      </div>
+      <div class="right">
+        <img src="{% static 'img/jpg/forest.jpg' %}" alt="" class="image-about-me">
+      </div>
+    </div>
+    <div class="space">
+      <h2>Hey, check it out</h2>
+      <img src="{% static 'img/png/astronaut.png' %}" alt="" class="astronaut">
+    </div>
+    <div class="work-section">
+        <div class="left">
+           <h2>Let's see how coffee</h2>
+          <h2>Helped me with creating projects</h2>
+        </div>
+        <div class="right">
+          <img src="{% static 'img/jpg/coffee.jpg' %}" alt="" class="coffee_image">
+            <a href="/work/" class="know-more">Check out my work</a>
+        </div>
+    </div>
+  </article>
+  <footer class="footer">
+    <h3>&copy 2019 Nodari Pylypyshak</h3>
+  </footer>
+  <script src="{% static 'js/vendor/jquery-3.4.1.min.js'%}"></script>
+  <script src="{% static 'js/vendor/modernizr-3.7.1.min.js'%}"></script>
+  <script src="{% static 'js/plugins.js' %}"></script>
+  <script src="{% static 'js/main.js'%}"></script>
+
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

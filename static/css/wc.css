@@ -1,0 +1,224 @@
+body{
+  background-color:#141517;
+  font-family: 'Main';
+  height: 100%;
+}
+h2,h3{
+  font-weight: normal;
+}
+a.homepage{
+
+}
+header.header{
+  height:10vh;
+}
+article.content{
+  background-color: #141517;
+}
+a.case_link{
+  width:25%;
+  height: auto;
+}
+.case{
+  margin:10px;
+  width:100%;
+}
+.case h3{
+  z-index: 2;
+}
+.case img{
+  width:100%;
+  height: 100%;
+  z-index: 2;
+}
+.work-container{
+  width:100%;
+  height: auto;
+  margin-top: 10vh;
+  background-color: #141517;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom:30px;
+}
+
+article.contact{
+  width:100%;
+  height:100vh;
+  position: relative;
+  background: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  top:0;
+}
+.article-left, .article-right{
+  width:50%;
+  height:100vh;
+  background-color:#141517;
+  position: relative;
+}
+form.contact_me{
+  width:65%;
+  height:70vh;
+  border:6px solid #D7D7D7;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  margin:auto;
+  font-family: 'Main';
+  text-align: center;
+}
+form.contact_me label{
+  display: none;
+}
+form.contact_me input:nth-child(1){
+  margin-top: 10%;
+}
+form.contact_me input {
+  width: 80%;
+  font-family: 'Main';
+  height: 10vh;
+  border: 6px solid #D7D7D7;
+  background: #D7D7D7;
+  color: #141517;
+  display: block;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 1vw;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+
+form.contact_me textarea{
+  width:80%;
+  font-family: 'Main';
+  height:10vh;
+  border:6px solid #D7D7D7;
+  background: #D7D7D7;
+  color:#141517;
+  display: block;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size:1vw;
+  margin-left:10%;
+  margin-top:3%;
+  resize: none;
+}
+form.contact_me input::selection{
+  background: #EDE2CE;
+}
+form.contact_me textarea.some_text{
+  height:150px;
+  resize: none;
+}
+form.contact_me button{
+  color:#141517;
+  border-radius: 4px;
+  border: 2px solid #141517;
+  padding:5px 5px;
+  background-color:#EDE2CE;
+  font-size:20px;
+  margin-top:5%;
+  width:120px;
+  text-align: center;
+  font-family: 'Main';
+}
+.article-right{
+  background-image: url("../img/jpg/vintage_car.jpg");
+  background-size: 100%;
+}
+
+
+.done-block{
+  width:60%;
+  height:35vh;
+  text-align: center;
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  line-height: 15vh;
+  margin: auto;
+}
+h2.done{
+  font-size:2.5vw;
+}
+
+footer.footer{
+  width:100%;
+  height:20vh;
+  position: relative;
+  clear: both;
+}
+footer h2{
+  font-size:2vw;
+}
+footer a{
+  font-size:2.5vw;
+}
+@media (min-width: 320px) and (max-width: 1024px){
+  .case{
+    width:90%;
+    height:220px;
+  }
+  article.contact{
+    height: auto;
+    margin-top: 0;
+  }
+  .article-right{
+    display: none;
+  }
+  .article-left{
+    width:100%;
+    height:1024px;
+    position: relative;
+    background-image: url("../img/jpg/vintage_car.jpg");
+    background-size:inherit;
+    background-position: right;
+  }
+  form.contact_me {
+    width: 95%;
+    height: 580px;
+    border: none;
+    font-family: 'Main';
+    text-align: center;
+  }
+  form.contact_me input{
+    width:95%;
+    height: 100px;
+    margin-left: 2.5%;
+    font-size: 20px;
+    border:3px solid #141517;
+  }
+  form.contact_me input:nth-child(1) {
+    margin-top: 0;
+  }
+  form.contact_me textarea{
+    width:95%;
+    margin-left:2.5%;
+    height: 300px;
+    font-size: 20px;
+    border:3px solid #141517;
+  }
+  form.contact_me textarea.some_text{
+    height: 250px;
+  }
+  .done-block{
+    width:90%;
+    line-height: 9vh;
+  }
+  h2.done{
+    font-size:30px;
+  }
+
+  footer a{
+    font-size: 25px;
+  }
+}
+
